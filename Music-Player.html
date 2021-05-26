@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suno Gaana</title>
+	<!-- Linking CSS file with html file -->
+	<link rel="stylesheet" type="text/css" href="..\CSS\Music-player.css">
+
+	<!-- meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <linking external file for the icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+</head>
+<body>
+	<!-- container containing the header, main and footer section of the website -->
+	<div class="container">
+		<!-- Header section including the logo of the website, search option and favourites etc -->
+		<header>
+
+			<!-- Logo of the website -->
+			<section class="header-section">
+				<div class="logo">
+					<img src="images\music-logo.png" id="logo-image">
+					<p id="music-player-name">Ninja<br> Studio</p>
+				</div>
+
+				<!-- favorites -->
+
+				<div class="favourites">
+					<p id="favourites">Favourites</p>
+				</div>
+
+				<!-- Searching -->
+
+				<div class="search">
+					<form>
+						<input type="text" name="search-music" placeholder="Search..." id="music-search">
+					</form>
+				</div>
+
+				<!-- Search logo -->
+
+				<div class="search-logo">
+					<i class="fa fa-search" style="font-size:16px;color:darkgrey;" id="search-logo"></i>
+				</div>
+
+				<!-- mic -->
+
+				<div class="mic">
+					<i class="fa fa-microphone" style="font-size:16px;color:darkgrey" id="mic-icon"></i>
+				</div>
+
+				<!-- Notification bell -->
+
+				<div class="notification">
+					<i class="material-icons" style="font-size:26px;color:white">notifications</i>
+				</div>
+
+				<div id="red-dot"></div>
+
+				<!-- Profile Section -->
+
+				<div class="profile-photo">
+					<img src="images\ea7f223a-7648-47f8-9ac9-450dcd136db3.jpg" id="profile-photo">
+				</div>
+			</section>
+
+			<section class="main-images-section">
+				<div class="main-images">
+					<img src="images\music-2.jpg" id="music-1">
+					<img src="images\music-1.jpg" id="music-2">
+					<img src="images\music-3.png" id="music-3">
+				</div>
+			</section>
+		</header>
+
+		<main>	
+			<!-- Main body images -->
+
+			<section class="latest-release-section">
+				<h4 class="latest-release">Latest Release</h4>
+
+
+				<div class="latest-release-images">
+
+
+					<div class="latest-box">
+						<div class="three-dots">
+							<a href="#three-dots-content1"><i class="fa fa-ellipsis-h" style="font-size:20px; color: darkgrey;"></i>
+						</div>
+						<div id="three-dots-content1">
+							<div>
+								<i class="fa fa-play" style="font-size:18px;color:black" id="play-dropdown"></i>
+								<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');">Play all</a><br>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="queue-dropdown1">queue</i>
+								<a href="#three-dots">Add in Queue</a>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="fav-dropdown">favorite</i>
+								<a href="#three-dots">Add to favorites</a>
+							</div>
+						</div>
+						<i class="fa fa-play" style="font-size:40px;color:white" id="play"></i>
+						<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+						<img src="images\latest-release-image.jpg" class="latest-image">
+					</div>
+
+
+					<div class="latest-box">
+						<div class="three-dots">
+							<a href="#three-dots-content2"><i class="fa fa-ellipsis-h" style="font-size:20px; color: darkgrey;"></i></a>
+						</div>
+						<div id="three-dots-content2">
+							<div>
+								<i class="fa fa-play" style="font-size:18px;color:black" id="play-dropdown"></i>
+								<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');">Play all</a><br>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="queue-dropdown1">queue</i>
+								<a href="#three-dots">Add in Queue</a>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="fav-dropdown">favorite</i>
+								<a href="#three-dots">Add to favorites</a>
+							</div>
+						</div>
+						<i class="fa fa-play" style="font-size:40px;color:white" id="play"></i>
+						<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+						<img src="images\latest-release-image.jpg" class="latest-image">
+					</div>
+
+
+					<div class="latest-box">
+						<div class="three-dots">
+							<a href="#three-dots-content3"><i class="fa fa-ellipsis-h" style="font-size:20px; color: darkgrey;"></i></a>
+						</div>
+						<div id="three-dots-content3">
+							<div>
+								<i class="fa fa-play" style="font-size:18px;color:black" id="play-dropdown"></i>
+								<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');">Play all</a><br>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="queue-dropdown1">queue</i>
+								<a href="#three-dots">Add in Queue</a>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="fav-dropdown">favorite</i>
+								<a href="#three-dots">Add to favorites</a>
+							</div>
+						</div>
+						<i class="fa fa-play" style="font-size:40px;color:white" id="play"></i>
+						<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+						<img src="images\latest-release-image.jpg" class="latest-image">
+					</div>
+
+
+					<div class="latest-box">
+						<div class="three-dots">
+							<a href="#three-dots-content4"><i class="fa fa-ellipsis-h" style="font-size:20px; color: darkgrey;"></i></a>
+						</div>
+						<div id="three-dots-content4">
+							<div>
+								<i class="fa fa-play" style="font-size:18px;color:black" id="play-dropdown"></i>
+								<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');">Play all</a><br>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="queue-dropdown1">queue</i>
+								<a href="#three-dots">Add in Queue</a>
+							</div>
+							<div>
+								<i class="material-icons" style="font-size:18px" id="fav-dropdown">favorite</i>
+								<a href="#three-dots">Add to favorites</a>
+							</div>
+						</div>
+						<i class="fa fa-play" style="font-size:40px;color:white" id="play"></i>
+						<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+						<img src="images\latest-release-image.jpg" class="latest-image">
+					</div>
+
+
+				</div>
+			</section>
+
+			<section class="popular-artist-section">
+
+				<h4 id="popular-artist">Popular Artist</h4>
+
+				<div class="popular-artist-images1">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\ed-sheeren.jpg" class="artist-images"></a>
+					<p class="artist-name">Ed Sheeren</p>
+				</div>
+					
+				<div class="popular-artist-images">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\cold-play.png" class="artist-images"></a>
+					<p class="artist-name">Cold Play</p>
+				</div>
+					
+				<div class="popular-artist-images">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\zayn.jpg" class="artist-images"></a>
+					<p class="artist-name">Zayn</p>
+				</div>
+					
+				<div class="popular-artist-images">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\charlie-puth.jpg" class="artist-images"></a>
+					<p class="artist-name">Charlie Puth</p>
+				</div>
+					
+				<div class="popular-artist-images">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\imagine-dragon.jpg" class="artist-images"></a>
+					<p class="artist-name">Imagine Dragon</p>
+				</div>
+					
+				<div class="popular-artist-images">
+					<i class="fa fa-play" style="font-size:40px;color:white" id="play-popular"></i>
+					<a href="Music-Player-Single-Playlist.html"><img src="images\bruno-mars.jpg" class="artist-images"></a>
+					<p class="artist-name">Bruno Mars</p>
+				</div>
+			</section>
+			
+
+			<section class="music-stations-section">
+				<div>
+					<img src="images\music-station.png" id="main-station-music-logo">
+				</div>
+
+				<div class="types-of-music-station">
+					<div class="station-music-type-box">
+						<p>Love</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\love-songs.jfif" id="station-music-type"></a>
+					</div>
+
+					<div class="station-music-type-box">
+						<p>Retro</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\retro-songs.jpg" id="station-music-type"></a>
+					</div>
+
+					<div class="station-music-type-box">
+						<p>Chill</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\chill-songs.jpg" id="station-music-type"></a>
+					</div>
+
+					<div class="station-music-type-box">
+						<p id="workout">Workout</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\workout-songs.jpg" id="station-music-type"></a>
+					</div>
+
+					<div class="station-music-type-box">
+						<p>Rock</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\rock-songs.jpg" id="station-music-type"></a>
+					</div>
+
+					<div class="station-music-type-box">
+						<p>Pop</p>
+						<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\pop-songs.jpg" id="station-music-type"></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="party-electronic-roadTrip-section">
+				<div class="party-electronic-roadTrip-images">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\party-songs.png" id="party-electronic-roadTrip-songs-image"></a>
+					<p>Party</p>
+				</div>
+
+				<div class="party-electronic-roadTrip-images">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\electronic-songs.jfif" id="party-electronic-roadTrip-songs-image"></a>
+					<p>Electronic</p>
+				</div>
+
+				<div class="party-electronic-roadTrip-images">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\road-trip-songs.jfif" id="party-electronic-roadTrip-songs-image"></a>
+					<p>Road Trip</p>
+				</div>
+			</section>
+
+			<section class="latest-english-section">
+
+				<h4 id="latest-english">Latest English</h4>
+
+				<div class="latest-english-songs1">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english2.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english3.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english4.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english5.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english6.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+			</section>
+
+
+			<section class="latest-hindi-section">
+
+				<h4 id="latest-hindi">Latest Hindi</h4>
+
+				<div class="latest-english-songs1">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english2.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english3.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english4.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english5.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+					
+				<div class="latest-english-songs">
+					<a href="#onclick-play-section" onclick="window.open('Dhaaga.mp3');"><img src="images\latest-english6.jpg" class="latest-english-images"></a>
+					<p class="latest-name-song">Onism <br> Feb 18 2001</p>
+				</div>
+			</section>
+
+
+		</main>
+		<aside>
+			<h4 id="queue-name">Queue</h4>
+
+			<select name="queue" id="queue-dropdown" text="queue">
+				<option value="queue">Queue</option>
+			    <option value="playList">Play List</option>
+			    <option value="fav-song">Favourite Songs</option>
+			 </select>
+
+			 <div>
+			 	<span>
+			 		01
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 	
+			 </div>
+
+			 <div>
+			 	<span>02</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>03</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 <div>
+			 	<span>04</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>05</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>06</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>07</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>08</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>09</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>10</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>11</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>12</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>13</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>14</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>15</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>16</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>17</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>18</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>19</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+
+			 <div>
+			 	<span>20</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+			 </div>
+		</aside>
+
+		<section id="contact">
+				<h1 class="section-heading">
+					<span id="contact-image"><img src="images\contact.png"></span>
+					<span id="contact-name">Contact</span>
+				</h1>
+
+				<div class="contact-desc">
+					<span id="sending-message">
+						<form>
+							<div>
+								<input type="text" name="your-name" id="your-name" required placeholder="Your Name">
+							</div>
+							<div>
+								<input type="text" name="your-email" id="your-email" required placeholder="Your Email">
+							</div>
+							
+							<div>
+								<textarea id="message" placeholder="Message"></textarea>
+							</div>
+							
+							<button id="send-button">SEND MESSAGE</button>
+						</form>
+					</span>
+
+					<span id="information">
+						<h2>Get In touch</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<h2>My Address</h2>
+						<div>
+							<i class="material-icons">&#xe567;</i>
+							Delhi, India
+						</div>
+						<br>
+						<div>
+							<i class="material-icons">&#xe551;</i>
+							+918529754808
+						</div>
+						<br>
+						<div>
+							<i class="material-icons">&#xe554;</i>
+							kunalbansal901@gmail.com
+						</div>
+					</span>
+
+					<section id="onclick-play-section">
+						<div class="onclick-play">
+							<img src="images\latest-release-image.jpg" id="onclick-play-image">
+							<span>
+			 					<span class="oclick-song-name">Onism by John</span>
+			 					<span class="onclick-song-singer">John Lennon</span>
+			 				</span>
+
+			 				<span id="onclick-play-heart">
+			 					<i class="fa fa-heart-o" style="font-size:15px"></i>
+			 				</span>
+
+			 				<span class="range-slider">
+  								<input type="range" min="1" max="100" value="50" class="slider">
+			 				</span>
+
+			 				<span>
+			 					<i class="fa fa-pause-circle-o" style="font-size:36px; color: white" id="play-logo"></i>
+			 					<i class="fa fa-fast-backward" style="font-size:25px; color: white"
+			 					id="fast-back-logo"></i>
+			 					<i class="fa fa-fast-forward" style="font-size:25px; color: white"
+			 					id="fast-forward-logo"></i>
+			 					<i class="material-icons" style=" font-size: 20px; color: #725757; position: absolute; left: 40%; top: 27%">shuffle</i>
+			 					<i class="material-icons" style=" font-size: 20px; color: #725757; position: absolute; left: 65%; top: 27%">shuffle</i>
+			 				</span>
+
+			 				<span>
+			 					<i class="fa fa-volume-up" style="color: white; position: absolute;
+			 					top: 50%; left: 86%"></i>
+			 					<input type="range" min="1" max="100" value="100" style="position: absolute; top: 47%; left: 88%;">
+			 				</span>
+
+			 				<span>
+			 					<a href="#"><i class="fa fa-close" style="font-size:24px; color: white;position: absolute; left: 98%;"></i></a>
+			 				</span>
+						</div>
+					</section>
+			</section>
+	</div>
+</body>
+</html>

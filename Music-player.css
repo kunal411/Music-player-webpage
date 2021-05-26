@@ -1,0 +1,980 @@
+/*Background colour of the website*/
+.container{
+	background-image: linear-gradient(to right, #0a1d3c, #241649);
+	margin: -10px;
+}
+
+section{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+/*header section*/
+/*Setting size and margins of the logo image*/
+.header-section{
+	position: sticky;
+	background-color: #10102f;
+	padding-bottom: 50px;
+}
+
+#logo-image{
+	height: 60px;
+	width: 100px;
+	padding: 0px;
+	padding-top: 25px;
+}
+
+/*Setting size and margins of the logo container*/
+.logo{
+	position: relative;
+	height: 60px;
+	width: 200px;
+}
+
+/*Setting the position of Music player Name*/
+#music-player-name{
+	position: absolute;
+	top: 40%;
+	left: 43%;
+	color: white;
+	font-family: serif;
+}
+
+/*Setting the position of favorites in header*/
+
+#favourites{
+	color: darkgrey;
+	font-family: sans-serif;
+	position: absolute;
+	top: 27%;
+	left: 20%;
+	padding: 5px;
+}
+
+#favourites:hover{
+	font-size: 15px;
+	background-color: rgb(230, 196, 196, 0.3);
+	box-shadow: 0px 0px 4px 4px rgb(230, 196, 196, 0.3);
+}
+
+/*Search box*/
+
+#music-search{
+	position: absolute;
+	left: 62%;
+	top: 43%;
+	height: 25px;
+	width: 220px;
+	background-color: #1f1f58;
+	outline: none;
+	border: 0px;
+	padding-left: 28px;
+	color: white;
+}
+
+/*Setting location of search logo*/
+#search-logo{
+	position: absolute;
+	left: 62.5%;
+	top: 46%;
+}
+
+/*Setting location of mic*/
+#mic-icon{
+	position: absolute;
+	left: 78.5%;
+	top: 48%;
+}
+
+ /*Setting location of Notification bell*/
+ .notification{
+
+ 	position: absolute;
+ 	left: 85%;
+ 	top: 43%;
+ }
+
+@media only screen and (max-width: 900px){
+	#favourites{
+		left: 30%;
+	}
+
+	#music-search, #search-logo, #mic-icon{
+		visibility: hidden;
+	}
+}
+
+/*Vibrating the bell on hovering on it*/
+@keyframes vibrate{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	25%{
+		transform: rotate(-20deg);
+	}
+
+	75%{
+		transform: rotate(20deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+ .notification:hover{
+	animation-name: vibrate;
+	animation-duration: 0.2s;
+	animation-iteration-count: 4;
+ }
+
+ #red-dot{
+ 	position: absolute;
+ 	height: 5px;
+ 	width: 5px;
+ 	background-color: red;
+ 	border-radius: 50%;
+ 	left: 86.3%;
+ 	top: 43%;
+ }
+ 
+ /*Setting the profile picture*/
+#profile-photo{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	left: 90%;
+	top: 33%;
+}
+
+/*Setting main images location and size*/
+.main-images-section{
+	height: auto;
+}
+
+.main-images{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+#music-1, #music-3, #music-2{
+	height: 220px;
+	width: 30%;
+	margin: 15px;
+	border-radius: 3%;
+	transition: 0.4s ease-in-out;
+}
+
+#music-1:hover, #music-3:hover, #music-2:hover{
+	height: 250px;
+	width: 32%;
+	margin-top: -15px;
+	margin-bottom: -15px;
+	box-shadow: 0px 0px 28px 10px rgba(0, 0, 0, 1);
+}
+
+/*Setting the latest release music name of the heading and images*/
+.latest-release-section{
+	width: 100%;
+	height: auto;
+}
+
+.latest-release{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-left: 50px;
+}
+
+.latest-release-images{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 50px;
+}
+
+.latest-image{
+	height: 100px;
+	width: 100px;
+}
+
+.latest-box{
+	position: relative;
+	margin-bottom: 20px;
+	height: 100px;
+	width: 350px;
+}
+
+.latest-name-song{
+	position: absolute;
+	top: 45%;
+	left: 33%;
+	color: lightgrey;	
+}
+
+#play{
+	position: absolute;
+	left: 9%;
+	top: 30%;
+	opacity: 0;
+}
+
+#play:hover{
+	opacity: 0.7;
+}
+
+/*Three dots dropdown*/
+.three-dots{
+	position: absolute;
+	top: 5%;
+	left: 80%;
+}
+
+#three-dots-content1, #three-dots-content2, #three-dots-content3, #three-dots-content4{
+	position: absolute;
+	display: none;
+	top: 18%;
+    left: 41.5%;
+    height: 20%;
+    width: 50%;
+    transition: all 0s ease-in-out;
+}
+
+#three-dots-content4 a, #three-dots-content3 a, #three-dots-content2 a, #three-dots-content1 a{
+	font-size: 15px;
+	background-color: white;
+	color: black;
+	font-family: cursive;
+	text-decoration: none;
+	margin-left: 10px;
+	padding-bottom: 2px;
+}
+
+#three-dots-content4 div, #three-dots-content3 div, #three-dots-content2 div, #three-dots-content1 div{
+	padding-top: 5px;
+	background-color: white;
+	border-bottom: 2px solid lightgrey; 
+	height: 25px;
+	width: 160px;
+}
+
+#three-dots-content1:target, #three-dots-content2:target, #three-dots-content3:target, #three-dots-content4:target{
+	top: 18%;
+    left: 41.5%;
+    height: 20%;
+    width: 50%;
+    display: block;
+    transition: all 0s ease-in-out;
+}
+
+#play-dropdown{
+	padding-left: 10px;
+}
+
+#queue-dropdown1{
+	padding-left: 5px;
+}
+
+#fav-dropdown{
+	padding-left: 5px;
+}
+
+
+/*Setting the heigth and width of popular artist images*/
+#popular-artist{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.popular-artist-section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: 50px;
+}
+
+.popular-artist-images{
+	position: relative;
+	height: 170px;
+	margin-top: 100px;
+}
+
+.popular-artist-images1{
+	position: relative;
+	height: 170px;
+	margin-top: 100px;
+	margin-left: -130px;
+}
+
+.artist-images{
+	padding-left: 0px;
+	object-fit: cover;
+	margin-right: 10px;
+	border-radius: 50%;
+	height: 130px;
+	width: 130px;
+	box-shadow: 0px 0px 33px 5px rgba(0,0,0,1);
+	transition: 0.3s ease-in;
+}
+
+.artist-name{
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+#play-popular{
+	position: absolute;
+	left: 37%;
+	top: 30%;
+	opacity: 0;
+}
+
+.popular-artist-images:hover #play-popular, .artist-images:hover{
+	opacity: 0.5;
+}
+
+.popular-artist-images1:hover #play-popular, .artist-images:hover{
+	opacity: 0.5;
+}
+
+/*Setting the locations of Music Station modes*/
+.music-stations-section{
+	margin-left: 50px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: #262656;
+	margin-top: 30px;
+}
+
+ .types-of-music-station{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	flex-direction: row;
+ }
+
+#main-station-music-logo{
+	height: 120px;
+	width: 130px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 30px;
+}
+
+.station-music-type-box{
+	border-radius: 50%;
+	height: 95px;
+	width: 90px;
+	margin-top: 25px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+#station-music-type{
+	border-radius: 50%;
+	height: 95px;
+	width: 90px;
+	opacity: 0.5;
+	object-fit: cover;
+}
+
+#station-music-type:hover{
+	transition: 0.4s ease-in-out;
+	transform: scale(1.5);
+}
+
+.station-music-type-box p{
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	margin-top: 37px;
+	margin-left: 28px;
+}
+
+#workout{
+	margin-left: 13px;
+}
+
+/*Setting location of party electronic road trip section*/
+.party-electronic-roadTrip-section{
+	margin-left: 55px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 30px;
+}
+
+.party-electronic-roadTrip-images{
+	position: relative;
+	height: 130px;
+	width: 263px;
+	margin-right: 22px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.party-electronic-roadTrip-images p{
+	position: absolute;
+	color: white;
+	top: 35%;
+	left: 40%;
+	font-family: sans-serif;
+	opacity: 0.9;
+}
+
+#party-electronic-roadTrip-songs-image{
+	position: relative;
+	height: 130px;
+	width: 263px;
+	opacity: 0.6;
+	transition: 0.4s ease-in-out;
+}
+
+#party-electronic-roadTrip-songs-image:hover{
+	transform: scale(1.5);
+}
+
+/*Setting the location of latest english section*/
+#latest-english{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.latest-english-section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: 50px;
+	padding-bottom: 20px;
+}
+
+.latest-english-songs{
+	position: relative;
+	height: 170px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.latest-english-images{
+	padding-left: 0px;
+	object-fit: cover;
+	margin-right: 10px;
+	height: 130px;
+	width: 130px;
+	transition: 0.3s ease-in;
+	opacity: 0.8;
+}
+
+.latest-english-songs1{
+	position: relative;
+	height: 170px;
+	margin-top: 100px;
+	margin-left: -130px;
+}
+
+.latest-english-songs p{
+	margin-left: -42px;
+	margin-top: 70px;
+}
+
+.latest-english-songs1 p{
+	margin-left: -42px;
+	margin-top: 70px;
+}
+
+/*Setting the location of latest english section*/
+#latest-hindi{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.latest-hindi-section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: 70px;
+	padding-bottom: 100px;
+}
+
+/*Setting contact section*/
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	margin: 10px auto;
+	position: relative;
+}
+
+#contact{
+	background-color: #10102f;
+	height: 100vh;
+}
+
+#contact-image img{
+	height: 40px;
+	width: 40px; 
+	padding-right: 10px;
+}
+
+#contact-name{
+	margin-top: 20px;
+	font-size: 40px;
+	color: white;
+}
+
+#your-name, #your-email, #message{
+	border: 0px;
+	font-size: 20px;
+	width: 60%;
+	margin: 50px 0px 0px 150px;
+	background-color: inherit;
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	outline: none;
+}
+
+#send-button{
+	background-color: inherit;
+	border: 2px solid white;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+#sending-message{
+	width: 60%;
+}
+
+.contact-desc span{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#information{
+	width: 35%;
+	color: white;
+	margin-top: 35px;
+}
+
+@media only screen and (max-width: 750px){
+	.contact-desc span{
+		display: block;
+		width: 90%;
+	}
+
+	#information{
+		background-color: inherit;
+		width: 60%;
+		margin-left: 100px;
+	}
+
+	#your-name, #your-email, #message{
+		margin-left: 100px;
+		width: 100%;
+	}
+
+	#contact{
+		height: 160vh;
+	}
+}
+
+.s{
+	margin-top: 30px;
+}
+
+.s img{
+	margin-right: 20px;
+}
+
+/*Setting Aside Section*/
+main{
+	display: inline-block;
+	width: 70%;
+	overflow: hidden;
+}
+
+aside{
+	margin-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	margin-right: -100px;
+}
+
+@media only screen and (max-width: 1100px){
+	aside{
+		display: block;
+	}
+
+	main{
+		display: block;
+		width: 90%;
+	}
+}
+
+/*Heading of the aside section*/
+
+#queue-name{
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+	font-family: sans-serif;
+	margin-left: 10px;
+}
+
+#queue-dropdown{
+	display: inline-block;
+	margin-left: 60px;
+	background-color: inherit;
+	color: #12ff70;
+	outline: none;
+	border: 0px;
+	margin-top: 50px;
+	font-size: 15px;
+}
+
+#queue-dropdown option{
+	background-color: black;
+}
+
+#queue-images{
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+}
+
+aside span{
+	margin-right: 10px;
+	color: white;
+	vertical-align: middle;
+}
+
+.queue-song-name{
+	display: block;
+	margin-top: -40px;
+	margin-left: 100px;
+}
+
+.queue-song-singer{
+	display: block;
+	color: #756a6a;
+	margin-left: 100px;
+}
+
+#heart{
+	display: inline-block;
+	color: white;
+	margin-top: -60px;
+	margin-left: 250px;
+}
+
+#heart:hover{
+	color: red;
+}
+
+/*Setting location of onclcik play section*/
+
+#onclick-play-section{
+	position: absolute;
+	top: 85%;
+	visibility: hidden;
+}
+
+#onclick-play-section:target{
+	visibility: visible;
+}
+
+.onclick-play{
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	background-color: #1b1a1a;
+}
+
+#onclick-play-image{
+	margin-top: 20px;
+	height: 50px;
+	width: 50px;
+	margin-left: 50px;
+}
+
+.oclick-song-name{
+	display: block;
+	margin-left: 10px;
+	color: white;
+	margin-top: 25px;
+
+}
+
+.onclick-song-singer{
+	display: block;
+	color: #6e6666;
+	position: absolute;
+	top: 50%;
+	left: 8.5%;
+}
+
+#onclick-play-heart{
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 17%;
+}
+
+#onclick-play-heart:hover{
+	color: red;
+}
+
+.range-slider{
+	position: absolute;
+	width: 35%;
+	top: 70%;
+	left: 35%;
+}
+
+.slider{
+	width: 100%;
+}
+
+.range-slider::before{
+	position: absolute;
+	content: "1:20";
+	color: #6e6666;
+	left: -9%;
+}
+
+.range-slider::after{
+	position: absolute;
+	content: "2:40";
+	color: #6e6666;
+	right: -9%;
+	top: 0%;
+}
+
+#play-logo{
+	position: absolute;
+	left: 51.5%;
+	top: 20%;
+}
+
+#fast-back-logo{
+	position: absolute;
+	left: 45.5%;
+	top: 25%;
+}
+
+#fast-forward-logo{
+	position: absolute;
+	left: 58.5%;
+	top: 25%;
+}
+
+/*Setting Single Playlist Mode location in new tab*/
+.main-section{
+	width: 70%;
+}
+
+.intro-popular-singer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #1a1a39;
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+#popular-singer-image{
+	height: 270px;
+	width: 30%;
+	opacity: 0.7;
+}
+
+#singer-name{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	top: 7%;
+	left: 35%;
+	font-family: sans-serif;
+}
+
+#band-name{
+	font-size: 10px;
+	color: #765e5e;
+	position: absolute;
+	color: #625b5b;
+	top: 20%;
+	left: 36%;
+	font-family: sans-serif;
+}
+
+#num-fol{
+	color: lightgrey;
+	font-size: 12px;
+	position: absolute;
+	top: 12%;
+	left: 80%;
+}
+
+#band-desc{
+	width: 55%;
+	position: absolute;
+	color: #625b5b;
+	font-size: 10px;
+	top: 30%;
+	left: 35%;
+	font-family: sans-serif;
+}
+
+.button{
+	position: absolute;
+	background-image: linear-gradient(to right, #2857a4, #403066);
+	border: none;
+	top: 64%;
+	left: 35%;
+	height: 30px;
+	width: 100px;
+	color: white;
+	cursor: pointer;
+}
+
+.button::after{
+	content: "Follow";
+	color: darkgrey;
+	position: absolute;
+	left: 100%;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.next-songs{
+	padding-left: 10px;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: #282e4d;
+	margin-left: 60px;
+	margin-top: 10px;
+	color: white;
+}
+
+#queue-images{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#queue-heart{
+	position: absolute;
+	left: 81%;
+	top: 40%;
+	color: lightgrey;
+}
+
+#queue-heart:hover{
+	color: red;
+}
+
+#queue-add{
+	position: absolute;
+	left: 87%;
+	top: 40%;
+	color: lightgrey;
+}
+
+/*Setting the aside section of the single playlist section*/
+
+.next-songs{
+	display: inline-block;
+}
+
+.playlist-aside-section{
+	position: relative;
+	display: inline-block;
+	height: auto;
+	width: 28%;
+	margin-left: -1px;
+	margin-top: 20px;
+}
+
+#similar-playlist-name{
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-left: 20px;
+}
+
+.playlist-aside-section p{
+	position: absolute;
+	top: 2%;
+	color: white;
+	left: 70%;
+}
+
+#similar-playlist-images{
+	height: 60px;
+	width: 60px;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+#recently-played{
+	top: 43%;
+}
+
+@media only screen and (max-width: 1100px){
+	.playlist-aside-section{
+		display: block;
+		margin-left: 35px;
+	}
+	.next-songs{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.main-section{
+		width: 100%;
+	}
+
+	#num-fol{
+		color: lightgrey;
+		font-size: 12px;
+		position: absolute;
+		top: 12%;
+		left: 70%;
+	}
+
+	#band-desc{
+		width: 45%;
+	}
+
+	.button{
+		top: 80%;
+	}
+}

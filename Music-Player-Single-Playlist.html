@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single Playlist</title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Music-player.css">
+
+	<!-- meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <linking external file for the icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<!-- container containing the header, main and footer section of the website -->
+	<div class="container">
+		<!-- Header section including the logo of the website, search option and favourites etc -->
+		<header>
+
+			<!-- Logo of the website -->
+			<section class="header-section">
+				<div class="logo">
+					<img src="images\music-logo.png" id="logo-image">
+					<p id="music-player-name">Ninja<br> Studio</p>
+				</div>
+
+				<!-- favorites -->
+
+				<div class="favourites">
+					<p id="favourites">Favourites</p>
+				</div>
+
+				<!-- Searching -->
+
+				<div class="search">
+					<form>
+						<input type="text" name="search-music" placeholder="Search..." id="music-search">
+					</form>
+				</div>
+
+				<!-- Search logo -->
+
+				<div class="search-logo">
+					<i class="fa fa-search" style="font-size:16px;color:darkgrey;" id="search-logo"></i>
+				</div>
+
+				<!-- mic -->
+
+				<div class="mic">
+					<i class="fa fa-microphone" style="font-size:16px;color:darkgrey" id="mic-icon"></i>
+				</div>
+
+				<!-- Notification bell -->
+
+				<div class="notification">
+					<i class="material-icons" style="font-size:26px;color:white">notifications</i>
+				</div>
+
+				<div id="red-dot"></div>
+
+				<!-- Profile Section -->
+
+				<div class="profile-photo">
+					<img src="images\ea7f223a-7648-47f8-9ac9-450dcd136db3.jpg" id="profile-photo">
+				</div>
+			</section>
+		</header>
+
+		<main class="main-section">
+			<div class="intro-popular-singer">
+				<span><img src="images\cold-play.png" id="popular-singer-image"></span>
+				<span><p id="singer-name">ColdPlay</p></span>
+				<span><p id="band-name">British Band</p></span>
+				<span><p id="num-fol">18M Followers</p></span>
+				<span><p id="band-desc">Coldplay are a British rock band formed in London in 1996. Vocalist, rhythm guitarist and pianist Chris Martin, lead guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion met at University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish before finally changing their name to Coldplay. Their creative director and former manager Phil Harvey is the fifth member of the band.</p></span>
+				<span><button class="button">Play All</button></span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		01
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		02
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		03
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		04
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		05
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		06
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		07
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		08
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		09
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+
+			<div class="next-songs">
+				<span>
+			 		10
+			 	</span>
+			 	<img src="images\latest-english6.jpg" id="queue-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="queue-heart">
+			 		<i class="fa fa-heart" style="font-size:15px"></i>
+			 	</span>
+
+			 	<span id="queue-add">
+			 		<i class="fa fa-plus" style="font-size:17px"></i>
+			 	</span>
+			</div>
+		</main>
+
+		<aside class="playlist-aside-section">
+			<h4 id="similar-playlist-name">Similar Artist</h4>
+
+			<p>View All</p>
+
+			<div>
+			 	<img src="images\latest-english3.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Imagine Dragon</span>
+			 		<span class="queue-song-singer">Pop brand</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-ellipsis-h" style="font-size:17px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english3.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Imagine Dragon</span>
+			 		<span class="queue-song-singer">Pop brand</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-ellipsis-h" style="font-size:17px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english3.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Imagine Dragon</span>
+			 		<span class="queue-song-singer">Pop brand</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-ellipsis-h" style="font-size:17px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english3.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Imagine Dragon</span>
+			 		<span class="queue-song-singer">Pop brand</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-ellipsis-h" style="font-size:17px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+
+			<h4 id="similar-playlist-name">Recently Played</h4>
+
+			<p id="recently-played">View All</p>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+
+			<div>
+			 	<img src="images\latest-english.jpg" id="similar-playlist-images">
+
+			 	<span>
+			 		<span class="queue-song-name">Mirage</span>
+			 		<span class="queue-song-singer">else</span>
+			 	</span>
+
+			 	<span id="heart">
+			 		<i class="fa fa-heart" style="font-size:15px; margin-left: 30px"></i>
+			 	</span>
+			 	
+			</div>
+		</aside>
+
+		<section id="contact">
+			<h1 class="section-heading">
+				<span id="contact-image"><img src="images\contact.png"></span>
+				<span id="contact-name">Contact</span>
+			</h1>
+
+			<div class="contact-desc">
+				<span id="sending-message">
+					<form>
+						<div>
+							<input type="text" name="your-name" id="your-name" required placeholder="Your Name">
+						</div>
+						<div>
+							<input type="text" name="your-email" id="your-email" required placeholder="Your Email">
+						</div>
+							
+						<div>
+							<textarea id="message" placeholder="Message"></textarea>
+						</div>
+							
+						<button id="send-button">SEND MESSAGE</button>
+					</form>
+				</span>
+
+				<span id="information">
+					<h2>Get In touch</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<h2>My Address</h2>
+					<div>
+						<i class="material-icons">&#xe567;</i>
+						Delhi, India
+					</div>
+					<br>
+					<div>
+						<i class="material-icons">&#xe551;</i>
+						+918529754808
+					</div>
+					<br>
+					<div>
+						<i class="material-icons">&#xe554;</i>
+						kunalbansal901@gmail.com
+					</div>
+				</span>
+
+			</div>
+
+		</section>
+	</div>
+
+</body>
+</html>
